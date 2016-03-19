@@ -30,11 +30,11 @@ $ docker build -t alantai/my_shard_one_arb .
 
 **4. Run Containers
 
-$ docker run --name replica_set_1_arb -p 27043:27017 -d alantai/my_shard_one_arb
+$ docker run --name replica_set_1_arb -p 27032:27017 -d alantai/my_shard_one_arb
 
-$ docker run --name replica_set_1_secondary -p 27042:27017 -d alantai/my_shard_one_secondary
+$ docker run --name replica_set_1_secondary -p 27031:27017 -d alantai/my_shard_one_secondary
 
-$ docker run --name replica_set_1_primary -p 27041:27017 -d alantai/my_shard_one_primary
+$ docker run --name replica_set_1_primary -p 27030:27017 -d alantai/my_shard_one_primary
 
 **5. Add secondary and arbiter containers to primary container, and start backup mechanism
 
