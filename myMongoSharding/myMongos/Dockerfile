@@ -10,7 +10,7 @@ RUN    apt-get update
 RUN    apt-get clean
 
 # set env
-ENV    backup_user=test_user user_pwd=shardingtestuser
+ENV    backup_user=test_user user_pwd=qwkpo234QMZNCPO095vivoGE5625deQQ
 
 # volume
 VOLUME   /data/db
