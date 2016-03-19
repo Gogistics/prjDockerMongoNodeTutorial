@@ -1,0 +1,24 @@
+{
+  "name": "my_node_apps",
+  "version": "1.0.0",
+  "description": "nodejs applications for cloud development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gogistics/prjDockerMongoNodeTutorial.git"
+  },
+  "keywords": [
+    "docker",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "Alan Tai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gogistics/prjDockerMongoNodeTutorial/issues"
+  },
+  "homepage": "https://github.com/Gogistics/prjDockerMongoNodeTutorial#readme"
+}
