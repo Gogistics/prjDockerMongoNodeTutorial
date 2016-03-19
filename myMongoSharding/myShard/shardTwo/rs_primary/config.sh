@@ -16,13 +16,13 @@ echo "db.auth('siteRootAdmin', 'shardingadmin')" >> authentication.js
 echo "rs.status()" >> authentication.js
 echo "rs.conf()" >> authentication.js
 echo "sleep(1000)" >> authentication.js
-echo "rs.add('45.56.85.129:27045')" >> authentication.js
+echo "rs.add('45.33.61.89:27045')" >> authentication.js
 echo "sleep(1000)" >> authentication.js
-echo "rs.addArb('45.56.85.129:27046')" >> authentication.js
+echo "rs.addArb('45.33.61.89:27046')" >> authentication.js
 echo "sleep(1000)" >> authentication.js
 echo "rs.status()" >> authentication.js
 echo "cfg = rs.conf()" >> authentication.js
-echo "cfg.members[0].host = '45.56.85.129:27044'" >> authentication.js
+echo "cfg.members[0].host = '45.33.61.89:27044'" >> authentication.js
 echo "rs.reconfig(cfg)" >> authentication.js
 echo "sleep(2000)" >> authentication.js
 echo "rs.conf()" >> authentication.js

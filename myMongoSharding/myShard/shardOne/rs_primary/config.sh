@@ -1,4 +1,4 @@
-# config. shell (45.56.85.129)
+# config. shell (198.74.48.34)
 # create authentication script
 echo "rs.initiate()" >> authentication.js
 echo "rs.status()" >> authentication.js
@@ -16,13 +16,13 @@ echo "db.auth('siteRootAdmin', 'shardingadmin')" >> authentication.js
 echo "rs.status()" >> authentication.js
 echo "rs.conf()" >> authentication.js
 echo "sleep(1000)" >> authentication.js
-echo "rs.add('45.56.85.129:27042')" >> authentication.js
+echo "rs.add('198.74.48.34:27042')" >> authentication.js
 echo "sleep(1000)" >> authentication.js
-echo "rs.addArb('45.56.85.129:27043')" >> authentication.js
+echo "rs.addArb('198.74.48.34:27043')" >> authentication.js
 echo "sleep(1000)" >> authentication.js
 echo "rs.status()" >> authentication.js
 echo "cfg = rs.conf()" >> authentication.js
-echo "cfg.members[0].host = '45.56.85.129:27041'" >> authentication.js
+echo "cfg.members[0].host = '198.74.48.34:27041'" >> authentication.js
 echo "rs.reconfig(cfg)" >> authentication.js
 echo "sleep(2000)" >> authentication.js
 echo "rs.conf()" >> authentication.js
