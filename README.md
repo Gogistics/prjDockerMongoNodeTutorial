@@ -6,3 +6,12 @@ In this tutorial, the Mongo sharding and applications of Nodejs will be deployed
 2. 45.56.85.129; in this instance, we are going to deploy docker containers to run Mongo Sharding-1
 3. 198.74.48.34; in this instance, we are going to deploy docker containers to run Mongo Sharding-2
 4. 45.33.61.89; in this instance, we are going to deploy containers to run Nodejs applications
+
+Development Steps:
+
+1. deploy Mongo Sharding
+2. deploy Nodejs applications
+
+NOTE: If you deploy wrong containers, remember to remove unused volumes by the command below after containers are removed
+
+**docker run -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker:/var/lib/docker --rm martin/docker-cleanup-volumes**
