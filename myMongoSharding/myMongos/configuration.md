@@ -4,10 +4,14 @@ cd myMongos/
 
 $ docker build -t my_mongos .
 
+**create mongos**
+
 $ docker run --name mongos_0 -p 27030:27017 -d my_mongos
 
 $ docker run --name mongos_1 -p 27031:27017 -d my_mongos
 
-$ docker exec mongos_0 bash ./config.sh
+$ docker run --name mongos_2 -p 27032:27017 -d my_mongos
 
-$ docker exec mongos_1 bash ./config.sh
+**configure sharding**
+
+$ docker exec mongos_0 bash ./config.sh

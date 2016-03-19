@@ -5,6 +5,10 @@ echo "db.auth('siteUserAdmin', 'EFmkEWRiowueFRWGE5625dew7Ufer567I7')" >> authent
 echo "db.createUser({user:'siteRootAdmin',pwd:'EFmkEWRiowueFRWGE5625dew7Ufer567I7',roles:[{role:'root',db:'admin'}]})" >> authentication.js
 echo "db.auth('siteRootAdmin', 'EFmkEWRiowueFRWGE5625dew7Ufer567I7')" >> authentication.js
 echo "sleep(1000)" >> authentication.js
+echo "use test" >> authentication.js
+echo "db.createUser({user:'test_user',pwd:'qwkpo234QMZNCPO095vivoGE5625deQQ',roles:[{role:'readWrite',db:'test'}]})" >> authentication.js
+echo "db.auth('test_user', 'qwkpo234QMZNCPO095vivoGE5625deQQ')" >> authentication.js
+echo "sleep(1000)" >> authentication.js
 echo "sh.addShard('rs1/198.74.48.34:27030,198.74.48.34:27031,198.74.48.34:27032')" >> authentication.js
 echo "sleep(2000)" >> authentication.js
 echo "sh.addShard('rs2/45.33.61.89:27030,45.33.61.89:27031,45.33.61.89:27032')" >> authentication.js
