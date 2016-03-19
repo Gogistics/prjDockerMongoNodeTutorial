@@ -1,4 +1,4 @@
-# config. shell
+# config. shell (45.56.85.129)
 # create authentication script
 echo "rs.initiate()" >> authentication.js
 echo "rs.status()" >> authentication.js

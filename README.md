@@ -1,4 +1,4 @@
-#Tutorial of development of cloud applications with Docker, MongoDB, and Nodejs
+#Tutorial of development with Docker, MongoDB, and Nodejs
 
 In this tutorial, the Mongo sharding and applications of Nodejs will be deployed in four instances on Linode and the IPs of four instances are listed below:
 
