@@ -5,7 +5,7 @@ FROM    mongo
 MAINTAINER Alan Tai <gogistics@gogistics-tw.com>
 
 RUN    apt-get update
-RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils git build-essential
+RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils
 RUN    apt-get update
 RUN    apt-get clean
 
@@ -29,4 +29,4 @@ WORKDIR /my_scripts
 EXPOSE  27017
 
 # entry command
-CMD mongos --keyFile /opt/keyfile/mongodb-keyfile --configdb 45.56.85.129:27050,45.56.85.129:27051,45.56.85.129:27052 --chunkSize 100
+CMD mongos --keyFile /opt/keyfile/mongodb-keyfile --configdb 45.56.85.129:27050,45.56.85.129:27051,45.56.85.129:27052 --chunkSize 300

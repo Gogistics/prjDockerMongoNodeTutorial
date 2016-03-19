@@ -5,7 +5,7 @@ FROM    mongo
 MAINTAINER Alan Tai <gogistics@gogistics-tw.com>
 
 RUN    apt-get update
-RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils git build-essential
+RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils
 RUN    apt-get update
 RUN    apt-get clean
 

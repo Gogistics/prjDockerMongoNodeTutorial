@@ -6,7 +6,7 @@ MAINTAINER Alan Tai <gogistics@gogistics-tw.com>
 
 # run commands
 RUN    apt-get update
-RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils git build-essential supervisor
+RUN    DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-utils git-core build-essential supervisor
 RUN    apt-get update
 RUN    apt-get clean
 
