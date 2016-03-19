@@ -17,7 +17,7 @@ ENV    backup_user=test_user user_pwd=qwkpo234QMZNCPO095vivoGE5625deQQ
 VOLUME   /data/db
 
 # add files to working dir
-COPY    ./config.sh /my_scripts
+COPY    ./config.sh /my_scripts/
 COPY    ./mongodb-keyfile /opt/keyfile/mongodb-keyfile
 
 # Install app dependencies
