@@ -33,3 +33,13 @@ $ docker run -d swarm join --advertise=45.33.61.89:2375 consul://45.79.106.150:8
 5. Go back to the instance, 45.79.106.150, and check the status of swarm
 
 $ docker -H :4000 info
+
+------
+
+**Container filters**
+
+Pull image and run container for specific node on the manager node:
+
+$ docker -H 198.74.48.34:2375 pull redis
+
+$ docker -H 198.74.48.34:2375 run -d --name redis1 -e affinity:image==redis redis
